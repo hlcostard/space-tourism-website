@@ -5,7 +5,6 @@ import logo from "./assets/shared/logo.svg";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [menuItem, setMenuItem] = useState(0);
 
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
@@ -42,7 +41,6 @@ const Navbar = () => {
             className="ff-sans-cond uppercase text-white letter-spacing-2"
             onClick={() => {
               closeMenu();
-              setMenuItem(0);
             }}>
             <span aria-hidden="true">00</span> Home
           </NavLink>
@@ -53,7 +51,6 @@ const Navbar = () => {
             className="ff-sans-cond uppercase text-white letter-spacing-2"
             onClick={() => {
               closeMenu();
-              setMenuItem(1);
             }}>
             <span aria-hidden="true">01</span> Destination
           </NavLink>
@@ -64,7 +61,6 @@ const Navbar = () => {
             className="ff-sans-cond uppercase text-white letter-spacing-2"
             onClick={() => {
               closeMenu();
-              setMenuItem(2);
             }}>
             <span aria-hidden="true">02</span> Crew
           </NavLink>
@@ -75,7 +71,6 @@ const Navbar = () => {
             className="ff-sans-cond uppercase text-white letter-spacing-2"
             onClick={() => {
               closeMenu();
-              setMenuItem(3);
             }}>
             <span aria-hidden="true">03</span> Technology
           </NavLink>

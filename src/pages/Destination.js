@@ -23,25 +23,25 @@ const Destination = () => {
 
       <div class="tab-list underline-indicators flex">
         <button
-          aria-selected={`${index === 0}`}
+          aria-pressed={`${index === 0}`}
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
           onClick={() => setIndex(0)}>
           Moon
         </button>
         <button
-          aria-selected={`${index === 1}`}
+          aria-pressed={`${index === 1}`}
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
           onClick={() => setIndex(1)}>
           Mars
         </button>
         <button
-          aria-selected={`${index === 2}`}
+          aria-pressed={`${index === 2}`}
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
           onClick={() => setIndex(2)}>
           Europa
         </button>
         <button
-          aria-selected={`${index === 3}`}
+          aria-pressed={`${index === 3}`}
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
           onClick={() => setIndex(3)}>
           Titan

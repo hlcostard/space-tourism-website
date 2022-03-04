@@ -18,13 +18,13 @@ const Technology = () => {
       </h1>
 
       <div className="number-indicators flex" aria-label="crew member list">
-        <button aria-selected={`${index === 0}`} onClick={() => setIndex(0)}>
+        <button aria-pressed={`${index === 0}`} onClick={() => setIndex(0)}>
           1
         </button>
-        <button aria-selected={`${index === 1}`} onClick={() => setIndex(1)}>
+        <button aria-pressed={`${index === 1}`} onClick={() => setIndex(1)}>
           2
         </button>
-        <button aria-selected={`${index === 2}`} onClick={() => setIndex(2)}>
+        <button aria-pressed={`${index === 2}`} onClick={() => setIndex(2)}>
           3
         </button>
       </div>

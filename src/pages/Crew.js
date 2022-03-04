@@ -18,16 +18,16 @@ const Crew = () => {
       </h1>
 
       <div className="dot-indicators flex">
-        <button aria-selected={`${index === 0}`} onClick={() => setIndex(0)}>
+        <button aria-pressed={`${index === 0}`} onClick={() => setIndex(0)}>
           <span className="sr-only">{crew[0].role}</span>
         </button>
-        <button aria-selected={`${index === 1}`} onClick={() => setIndex(1)}>
+        <button aria-pressed={`${index === 1}`} onClick={() => setIndex(1)}>
           <span className="sr-only">{crew[1].role}</span>
         </button>
-        <button aria-selected={`${index === 2}`} onClick={() => setIndex(2)}>
+        <button aria-pressed={`${index === 2}`} onClick={() => setIndex(2)}>
           <span className="sr-only">{crew[2].role}</span>
         </button>
-        <button aria-selected={`${index === 3}`} onClick={() => setIndex(3)}>
+        <button aria-pressed={`${index === 3}`} onClick={() => setIndex(3)}>
           <span className="sr-only">{crew[3].role}</span>
         </button>
       </div>
