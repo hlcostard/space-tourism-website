@@ -26,55 +26,56 @@ const Navbar = () => {
         onClick={handleToggle}
         className={`mobile-nav-toggle ${navbarOpen ? "show-menu" : ""}`}
         aria-controls="primary-navigation">
-        <span className="sr-only" aria-expanded={navbarOpen}>
+        <span
+          className="sr-only"
+          aria-expanded={navbarOpen}
+          aria-controls="primary-navigation">
           Menu
         </span>
       </button>
-      <nav>
-        <ul
-          id="primary-navigation"
-          className={`primary-navigation underline-indicators flex 
+      <nav
+        id="primary-navigation"
+        className={`primary-navigation underline-indicators flex 
           ${navbarOpen ? "show-menu" : ""}`}>
-          <NavLink
-            to="/"
-            activeClassName="active"
-            className="ff-sans-cond uppercase text-white letter-spacing-2"
-            onClick={() => {
-              closeMenu();
-            }}>
-            <span aria-hidden="true">00</span> Home
-          </NavLink>
+        <NavLink
+          to="/"
+          activeClassName="active"
+          className="ff-sans-cond uppercase text-white letter-spacing-2"
+          onClick={() => {
+            closeMenu();
+          }}>
+          <span aria-hidden="true">00</span> Home
+        </NavLink>
 
-          <NavLink
-            to="/destination"
-            activeClassName="active"
-            className="ff-sans-cond uppercase text-white letter-spacing-2"
-            onClick={() => {
-              closeMenu();
-            }}>
-            <span aria-hidden="true">01</span> Destination
-          </NavLink>
+        <NavLink
+          to="/destination"
+          activeClassName="active"
+          className="ff-sans-cond uppercase text-white letter-spacing-2"
+          onClick={() => {
+            closeMenu();
+          }}>
+          <span aria-hidden="true">01</span> Destination
+        </NavLink>
 
-          <NavLink
-            to="/crew"
-            activeClassName="active"
-            className="ff-sans-cond uppercase text-white letter-spacing-2"
-            onClick={() => {
-              closeMenu();
-            }}>
-            <span aria-hidden="true">02</span> Crew
-          </NavLink>
+        <NavLink
+          to="/crew"
+          activeClassName="active"
+          className="ff-sans-cond uppercase text-white letter-spacing-2"
+          onClick={() => {
+            closeMenu();
+          }}>
+          <span aria-hidden="true">02</span> Crew
+        </NavLink>
 
-          <NavLink
-            to="/technology"
-            activeClassName="active"
-            className="ff-sans-cond uppercase text-white letter-spacing-2"
-            onClick={() => {
-              closeMenu();
-            }}>
-            <span aria-hidden="true">03</span> Technology
-          </NavLink>
-        </ul>
+        <NavLink
+          to="/technology"
+          activeClassName="active"
+          className="ff-sans-cond uppercase text-white letter-spacing-2"
+          onClick={() => {
+            closeMenu();
+          }}>
+          <span aria-hidden="true">03</span> Technology
+        </NavLink>
       </nav>
     </header>
   );
